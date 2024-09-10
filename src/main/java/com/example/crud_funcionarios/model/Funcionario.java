@@ -3,7 +3,7 @@ package com.example.crud_funcionarios.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name = "tbl_funcionario")
@@ -24,7 +24,7 @@ public class Funcionario {
     private String departamento;
 
     @Column(name = "data_admissao")
-    private LocalDate dataAdmissao;
+    private Date dataAdmissao;
 
     @Column(name = "email", length = 100)
     private String email;
